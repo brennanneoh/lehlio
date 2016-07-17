@@ -1,0 +1,30 @@
+{
+  "name": "lehlio",
+  "version": "0.0.1",
+  "description": "radio in singlish",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brennanneoh/lehlio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brennanneoh/lehlio/issues"
+  },
+  "homepage": "https://github.com/brennanneoh/lehlio#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-coffee": "^1.0.0",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-jasmine": "^1.0.3",
+    "grunt-contrib-pug": "^1.0.0",
+    "grunt-yaml": "^0.4.2"
+  },
+  "dependencies": {
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
