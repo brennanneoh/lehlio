@@ -1,0 +1,60 @@
+@import 'https://fonts.googleapis.com/css?family=Kaushan+Script';
+
+.banner {
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  margin-bottom: 2em;
+  display: table;
+  padding: 0 20px;
+}
+
+@media (min-width: 480px) {
+  .banner {
+    height: 100px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-size: 1600px;
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+    background-size: 1300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-size: 1100px;
+  }
+}
+
+@media (min-width: 768px) {
+  background-size: 1800px;
+  background-position: left;
+}
+
+body {
+  background-image: url('../imgs/old-television.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.banner-head {
+  text-align: left;
+  font-family: 'Kaushan Script', cursive;
+  display: table-cell;
+  vertical-align: middle;
+  margin-bottom: 0;
+  font-size: 5em;
+  color: white;
+  font-weight: 500;
+  text-shadow: 0 1px 1px black;
+}
+
+.content {
+  text-align: center;
+}

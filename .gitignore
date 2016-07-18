@@ -1,8 +1,5 @@
 build
-# Created by https://www.gitignore.io/api/node
-
-### Node ###
-# Logs
+.sass-cache
 logs
 *.log
 npm-debug.log*
