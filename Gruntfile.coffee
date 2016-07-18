@@ -40,6 +40,10 @@ module.exports = (grunt) ->
       sass:
         files: ['src/**/*.scss']
         tasks: ['compile:sass']
+    'gh-pages':
+      options:
+        base: 'build'
+      src: ['**']
 
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-pug'
@@ -47,6 +51,7 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-contrib-sass'
   grunt.loadNpmTasks 'grunt-contrib-copy'
+  grunt.loadNpmTasks 'grunt-gh-pages'
 
   grunt.registerTask 'compile', ['coffee', 'pug', 'sass', 'copy']
   grunt.registerTask 'server', ['compile', 'connect', 'watch']
