@@ -9,19 +9,20 @@
 @media (min-width: 480px) {
   .banner {
     height: 100px; } }
-@media (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
   body {
     background-size: 1600px; } }
-@media (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
   body {
     background-size: 1300px; } }
-@media (min-width: 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   body {
     background-size: 1100px; } }
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   background-size: 1800px;
   background-position: left; }
 body {
+  background-size: 1600px;
   background-image: url("../imgs/old-television.jpg");
   background-position: top;
   background-repeat: no-repeat; }
