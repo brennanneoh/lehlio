@@ -19,6 +19,9 @@
     }, {
       artist: 'Nathan Hartano',
       videoId: 'aPNrKhUlOzI'
+    }, {
+      artist: 'Shirlyn Tan',
+      videoId: 'f59ATP8-jNc'
     }
   ];
 
@@ -31,28 +34,12 @@
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
   window.onYouTubeIframeAPIReady = function() {
-    var dimension;
-    dimension = (function() {
-      switch (false) {
-        case !(screen.width > 1440):
-          return {
-            width: '960',
-            height: '720'
-          };
-        case !(screen.width > 480):
-          return {
-            width: '640',
-            height: '480'
-          };
-      }
-    })();
     return window.player = new YT.Player('player', {
-      width: dimension.width,
-      height: dimension.height,
       videoId: window.videos[_.random(this.videos.length - 1)].videoId,
       playerVars: {
         controls: 0,
         showinfo: 0,
+        iv_load_policy: 3,
         rel: 0,
         modestbranding: 1
       },
